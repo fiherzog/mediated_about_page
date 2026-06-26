@@ -227,12 +227,16 @@ img { max-width: 100%; height: auto; display: block; }
   color: var(--c-dark);
 }
 
+.mission__body p:first-child {
+  font-weight: 600;
+}
+
 /* anno-quote-text: EB Garamond Regular 24px, fill rgb(13,13,12), lh=23.25 */
 .mission__quote { max-width: 1153px; }
 
 .mission__quote blockquote {
   padding-left: var(--space-400);  /* 32px — proximity indent */
-  border-left: 1.5px solid rgba(13,13,12,0.2);
+  border-left: 2px solid var(--c-red);
   margin-bottom: var(--space-200);
 }
 
@@ -318,12 +322,12 @@ img { max-width: 100%; height: auto; display: block; }
   background-repeat: no-repeat;
 }
 
-/* Paragraph+Background gradient overlay — semi-transparent so photo shows through */
+/* Paragraph+Background gradient overlay — fully opaque, covers background photo */
 .orbital::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(150deg, rgba(85,51,238,0.82) 0%, rgba(223,54,17,0.82) 81%);
+  background: var(--c-gradient);
   pointer-events: none;
   z-index: 0;
 }
