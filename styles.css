@@ -401,12 +401,12 @@ img { max-width: 100%; height: auto; display: block; }
   flex-shrink: 0;
 }
 
-/* school-row-name: DM Sans Light 12px, fill white, lh=14.4 */
+/* school-row-name: DM Sans Light 16px, fill white */
 .school-list__name {
   font-family: var(--f-sans);
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 300;
-  line-height: 14.4px;
+  line-height: 19.2px;
   letter-spacing: 0;
   color: var(--c-white);
   text-decoration: none;
