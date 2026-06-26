@@ -409,6 +409,23 @@ img { max-width: 100%; height: auto; display: block; }
   line-height: 14.4px;
   letter-spacing: 0;
   color: var(--c-white);
+  text-decoration: none;
+  transition: text-decoration-color 0.15s, opacity 0.15s;
+}
+
+a.school-list__name {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(255, 255, 255, 0);
+}
+
+a.school-list__name:hover {
+  text-decoration-color: rgba(255, 255, 255, 0.7);
+  opacity: 0.85;
+}
+
+.school-list li:has(a.school-list__name:hover) {
+  background: rgba(255, 255, 255, 0.12);
 }
 
 /* funding note: DM Sans Regular 13px, fill rgb(255,255,254), lh=15.6 */
