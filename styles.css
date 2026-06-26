@@ -207,7 +207,7 @@ img { max-width: 100%; height: auto; display: block; }
   line-height: 50.4px;
   letter-spacing: 0;
   color: var(--c-accent);
-  margin-bottom: var(--space-400);  /* 32px below heading */
+  margin-bottom: var(--space-100);  /* 8px below heading */
 }
 
 /* p: DM Sans Light 20px, fill rgb(13,13,12), ls=0, lh=25.2 */
