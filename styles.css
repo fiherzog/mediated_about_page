@@ -196,7 +196,7 @@ img { max-width: 100%; height: auto; display: block; }
 .mission__inner {
   display: flex;
   flex-direction: column;
-  gap: var(--space-800);             /* 64px between content and quote */
+  gap: 0;
 }
 
 /* ch-title: EB Garamond SemiBold 48px, fill rgb(85,51,238), ls=0, lh=50.4 */
@@ -232,7 +232,10 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 /* anno-quote-text: EB Garamond Regular 24px, fill rgb(13,13,12), lh=23.25 */
-.mission__quote { max-width: 1153px; }
+.mission__quote {
+  max-width: 1153px;
+  margin-top: var(--space-800);  /* 64px above quote */
+}
 
 .mission__quote blockquote {
   padding-left: var(--space-400);
